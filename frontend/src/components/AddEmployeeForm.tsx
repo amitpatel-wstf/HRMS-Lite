@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { employeeApi } from '../services/api';
-import { Employee } from '../types';
 
 interface FormErrors {
   employeeId?: string;
@@ -24,7 +23,7 @@ const AddEmployeeForm = () => {
   const [success, setSuccess] = useState(false);
   const [checkingEmployeeId, setCheckingEmployeeId] = useState(false);
   const [employeeIdExists, setEmployeeIdExists] = useState(false);
-  const checkTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const checkTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Email validation function
   const validateEmail = (email: string): boolean => {

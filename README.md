@@ -2,6 +2,11 @@
 
 A lightweight, full-stack Human Resource Management System built with modern web technologies. This application allows administrators to manage employee records, track daily attendance, view comprehensive analytics, and generate detailed reports.
 
+## 🔗 Live Backend API
+
+**Backend API:** [https://hrms-lite-9yp1.onrender.com/api](https://hrms-lite-9yp1.onrender.com/api)  
+**API Documentation:** [https://hrms-lite-9yp1.onrender.com/api-docs](https://hrms-lite-9yp1.onrender.com/api-docs)
+
 ## ✨ Highlights
 
 - 🎯 **Complete CRUD Operations** - Create, Read, Update, Delete employees
@@ -336,7 +341,9 @@ Navigate to `http://localhost:3000`
 
 - `GET /api-docs` - Swagger UI documentation (interactive API documentation)
 
-**Access Swagger UI:** Navigate to `http://localhost:5000/api-docs` when the server is running.
+**Access Swagger UI:** 
+- Local: Navigate to `http://localhost:5000/api-docs` when the server is running locally
+- Live: [https://hrms-lite-9yp1.onrender.com/api-docs](https://hrms-lite-9yp1.onrender.com/api-docs)
 
 ## 🎨 UI Features
 
@@ -443,6 +450,18 @@ Navigate to `http://localhost:3000`
 
 ## 🌐 Deployment
 
+### Live URLs
+
+**Backend API (Live):**
+- Base URL: `https://hrms-lite-9yp1.onrender.com/api`
+- Swagger Documentation: [https://hrms-lite-9yp1.onrender.com/api-docs](https://hrms-lite-9yp1.onrender.com/api-docs)
+- Health Check: [https://hrms-lite-9yp1.onrender.com/api/health](https://hrms-lite-9yp1.onrender.com/api/health)
+
+**Example API Endpoints:**
+- Get all employees: `https://hrms-lite-9yp1.onrender.com/api/employees`
+- Get analytics: `https://hrms-lite-9yp1.onrender.com/api/analytics/summary`
+- Get attendance history: `https://hrms-lite-9yp1.onrender.com/api/history`
+
 ### Backend Deployment (Render/Railway/Heroku)
 
 1. **Prepare for deployment**:
@@ -475,13 +494,13 @@ npm run build
 2. **Deploy to Vercel**:
    - Install Vercel CLI: `npm i -g vercel`
    - Run `vercel` in the frontend directory
-   - Set environment variable: `VITE_API_URL=<your-backend-url>/api`
+   - Set environment variable: `VITE_API_URL=https://hrms-lite-9yp1.onrender.com/api`
 
 3. **Deploy to Netlify**:
    - Connect GitHub repository
    - Set build command: `npm run build`
    - Set publish directory: `dist`
-   - Add environment variable: `VITE_API_URL=<your-backend-url>/api`
+   - Add environment variable: `VITE_API_URL=https://hrms-lite-9yp1.onrender.com/api`
 
 ### Environment Variables for Production
 
@@ -494,7 +513,11 @@ NODE_ENV=production
 
 **Frontend (.env)**:
 ```env
-VITE_API_URL=<your-deployed-backend-url>/api
+# For production (using live backend)
+VITE_API_URL=https://hrms-lite-9yp1.onrender.com/api
+
+# For local development
+# VITE_API_URL=http://localhost:5000/api
 ```
 
 ## 📝 Assumptions & Limitations

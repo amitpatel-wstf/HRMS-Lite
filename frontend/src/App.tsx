@@ -5,6 +5,7 @@ import AttendanceManagement from './components/AttendanceManagement';
 import AttendanceHistory from './components/AttendanceHistory';
 import Summary from './components/Summary';
 import EmployeeDetail from './components/EmployeeDetail';
+import NotFound from './components/NotFound';
 import './App.css';
 
 function App() {
@@ -57,7 +58,7 @@ function App() {
           <Route path="/add-employee" element={<AddEmployeeForm />} />
           <Route path="/attendance" element={<AttendanceManagement />} />
           <Route path="/history" element={<AttendanceHistory />} />
-          <Route path="*" element={<Navigate to="/dashboard" replace />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
 

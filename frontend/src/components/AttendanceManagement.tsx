@@ -281,7 +281,7 @@ const AttendanceManagement = () => {
             className="btn btn-primary"
             disabled={
               loading ||
-              (selectedEmployee &&
+              !!(selectedEmployee &&
                 checkIfAttendanceExists(selectedEmployee, formData.date))
             }
           >
