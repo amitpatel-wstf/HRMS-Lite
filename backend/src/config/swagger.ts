@@ -17,8 +17,8 @@ const swaggerDefinition = {
       description: 'Development server',
     },
     {
-      url: 'https://your-production-url.com/api',
-      description: 'Production server',
+      url: 'https://hrms-lite-9yp1.onrender.com/api',
+      description: 'Production server (Live)',
     },
   ],
   tags: [

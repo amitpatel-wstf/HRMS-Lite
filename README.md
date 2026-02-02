@@ -2,8 +2,9 @@
 
 A lightweight, full-stack Human Resource Management System built with modern web technologies. This application allows administrators to manage employee records, track daily attendance, view comprehensive analytics, and generate detailed reports.
 
-## 🔗 Live Backend API
+## 🔗 Live Application URLs
 
+**Frontend Application:** [https://hrms-lite-fseh.vercel.app](https://hrms-lite-fseh.vercel.app)  
 **Backend API:** [https://hrms-lite-9yp1.onrender.com/api](https://hrms-lite-9yp1.onrender.com/api)  
 **API Documentation:** [https://hrms-lite-9yp1.onrender.com/api-docs](https://hrms-lite-9yp1.onrender.com/api-docs)
 
@@ -153,6 +154,12 @@ hrms-lite/
 ```
 
 ## ⚡ Quick Start
+
+### 🚀 Try the Live Application
+
+**Live Application:** [https://hrms-lite-fseh.vercel.app](https://hrms-lite-fseh.vercel.app)
+
+### 💻 Local Development Setup
 
 ```bash
 # 1. Install backend dependencies
@@ -452,10 +459,15 @@ Navigate to `http://localhost:3000`
 
 ### Live URLs
 
+**Frontend Application (Live):**
+- Application URL: [https://hrms-lite-fseh.vercel.app](https://hrms-lite-fseh.vercel.app)
+- Deployed on: Vercel
+
 **Backend API (Live):**
 - Base URL: `https://hrms-lite-9yp1.onrender.com/api`
 - Swagger Documentation: [https://hrms-lite-9yp1.onrender.com/api-docs](https://hrms-lite-9yp1.onrender.com/api-docs)
 - Health Check: [https://hrms-lite-9yp1.onrender.com/api/health](https://hrms-lite-9yp1.onrender.com/api/health)
+- Deployed on: Render
 
 **Example API Endpoints:**
 - Get all employees: `https://hrms-lite-9yp1.onrender.com/api/employees`
